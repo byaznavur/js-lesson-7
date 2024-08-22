@@ -37,18 +37,41 @@
 // Input: D:/Abdulaziz/Books/Programmer.exe
 // Output: Abdulaziz
 
-// UYGA VAZIFA
+//? UYGA VAZIFA
 
 //! String1. n butun soni berilgan (1 <= n <= 26). Lotin alfavitidagi dastlabki n ta katta harflarni chiqaruvchi programma tuzilsin.
-
+// let n = 12;
+// for (let i = 0; i < n; i++) {
+//   console.log(String.fromCharCode(65 + i));
+// }
 //! String2. Kiritilgan belgining nimaligini aniqlovchi programma tuzilsin. Agar kiritilgan belgi raqam bo'lsa - "digit", lotincha harf bo'lsa - "lotin" yozuvi chiqarilsin. Boshqa xolatlar uchun nol chiqarilsin.
 
+// let belgi = "323";
+// if (!isNaN(belgi) && belgi.length === 1) {
+//   console.log("digit");
+// } else if (belgi.toLowerCase() !== belgi.toUpperCase() && belgi.length === 1) {
+//   console.log("lotin");
+// } else {
+//   console.log(0);
+// }
+
 //! String3. Satr beilgan. Satrning birinchi va oxirgi belgisini UTF-16 jadvalidagi kodini chiqaruvchi programma tuzilsin.
+// let str = "Azizbek";
+// let a = str.codePointAt();
+// let b = str.codePointAt(str.length - 1);
+// console.log(a);
+// console.log(b);
 
 //! String4. N natural soni va belgi berilgan. N ta kiritilgan belgidan iborat satr hosil qiling va ekranga chiqaring. Masalan: N = 5; Belgi = 'A'; Natija = AAAAA
+// let a = 5;
+// let b = "A";
+// let res = b.padEnd(a, "A");
 
+// console.log(res);
 //! String5. Kiritilgan satrni teskari tartibda chiqaruvchi programma tuzilsin.
-
+// let str = "Azizbek";
+// let teskariSatr = str.split("").reverse().join("");
+// console.log(teskariSatr);
 //! String6. Satr va N natural soni berilgan. Shu satr belgilari orasiga N tadan "*" belgisi qo’yib yangi satr qaytaruvchi getStringStars(N) nomli funksiya tuzilsin.
 //
 //! String7. Satr berilgan. Satrdagi raqamlar sonini aniqlovchi programma tuzilsin. (for of va isNaN dan foydalaning !)

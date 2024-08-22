@@ -28,17 +28,17 @@
 
 // String3
 
-// function getUpperCases() {
-//   let str = "";
-//   for (let i = 65; i <= 90; i++) {
-//     str += String.fromCharCode(i);
-//   }
-//   return str;
-// }
+function getUpperCases() {
+  let str = "";
+  for (let i = 65; i <= 90; i++) {
+    str += String.fromCharCode(i);
+  }
+  return str;
+}
 
-// let upperCases = getUpperCases();
+let upperCases = getUpperCases();
 
-// console.log(upperCases);
+console.log(upperCases);
 
 // function getLowerCases() {
 //   let str = "";
