@@ -73,14 +73,59 @@
 // let teskariSatr = str.split("").reverse().join("");
 // console.log(teskariSatr);
 //! String6. Satr va N natural soni berilgan. Shu satr belgilari orasiga N tadan "*" belgisi qo’yib yangi satr qaytaruvchi getStringStars(N) nomli funksiya tuzilsin.
-//
+// let str = "Azizbek";
+// let N = 13;
+
+// function getStringStars(N) {
+//   let stars = "*".repeat(N);
+//   let result = str.split("").join(stars);
+//   return result;
+// }
+
 //! String7. Satr berilgan. Satrdagi raqamlar sonini aniqlovchi programma tuzilsin. (for of va isNaN dan foydalaning !)
 
+// let count = 0;
+// let str = "Aziz21bek";
+
+// for (el of str.split("")) {
+//   if (!isNaN(el)) {
+//     count++;
+//   }
+// }
+
+// console.log(count);
 //! String8. Satr berilgan. Satrdagi kichik lotin va kirill harflarining umumiy sonini aniqlovchi programma tuzilsin.
+// let str = "aAAAA";
+// let count = 0;
+
+// for (let el of str) {
+//   let charCode = el.charCodeAt(0);
+//   console.log(charCode);
+//   if (
+//     (charCode >= 97 && charCode <= 122) ||
+//     (charCode >= 1072 && charCode <= 1103)
+//   ) {
+//     count++;
+//   }
+// }
+
+// console.log(count); // Natija: 8
 
 //! String9. Satr berilgan. Satrdagi xamma katta lotin harflari kichigiga almashtiruvchi programma tuzilsin.
-
+// console.log(str.toLowerCase());
 //! String10. Satr berilgan. Satrdagi xamma katta harflarini kichigiga, kichiklarini kattasiga almashtiruvchi programma tuzilsin.
+// let str = "AzizbekAAaaBBcc";
+// let newStr = "";
+
+// for (let el of str) {
+//   if (el === el.toUpperCase()) {
+//     newStr += el.toLowerCase();
+//   } else {
+//     newStr += el.toUpperCase();
+//   }
+// }
+
+// console.log(newStr); // Natija: aZIZBEKaaAAbbCC
 
 //! String11. Satr berilgan. Agar satrda butun son ifodalangan bo'lsa 1 chiqarilsin, agar haqiqiy son bo'lsa 2 chiqarilsin. Agar satrni songa aylantirish imkoni bo'lmasa 0 chiqarilsin. Haqiqiy sonning kasr qismi nuqta "." Bilan ajratilgan deb qabul qilinsin.
 
