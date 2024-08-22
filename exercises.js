@@ -62,13 +62,13 @@ console.log(upperCases);
 
 // String6
 
-// let S1 = "Hello world";
-// let S2 = "*";
-// let C = "l";
+let S1 = "Hello world";
+let S2 = "*";
+let C = "l";
 
-// let res = S1.replaceAll(C, C + S2);
+let res = S1.replaceAll(C, C + S2);
 
-// console.log(res);
+console.log(res);
 
 // String7
 

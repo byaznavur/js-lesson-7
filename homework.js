@@ -129,13 +129,80 @@
 
 //! String11. Satr berilgan. Agar satrda butun son ifodalangan bo'lsa 1 chiqarilsin, agar haqiqiy son bo'lsa 2 chiqarilsin. Agar satrni songa aylantirish imkoni bo'lmasa 0 chiqarilsin. Haqiqiy sonning kasr qismi nuqta "." Bilan ajratilgan deb qabul qilinsin.
 
+// let str = "12.23";
+
+// if (Number.isInteger(+str)) {
+//   console.log(1);
+// } else if (!Number.isInteger(+str)) {
+//   console.log(2);
+// } else {
+//   console.log(0);
+// }
 //! String12. Berilgan n sonni teskarisiga almashtiruvchi getInverseNumber(n) nomli funksiya tuzing.
 
+// function getInverseNumber(n) {
+//   let str = n.toString().split("").reverse().join("");
+//   return parseInt(str);
+// }
+
+// let res = getInverseNumber(213123);
+// console.log(res);
 //! String13. "son ± son±... ± son" ko'rinishidagi arifmetik ifodani bildiruvchi satr berilgan. "+" belgisi o'rnida yo "+" yoki "-" bo'ladi. (Masalan: 7 + 3 - 2) Ifodaning qiymatini aniqlovchi programma tuzilsin. (son o'rnida butun son kiritiladi)
 
+// let expression = "7 + 3 - 2";
+// expression = expression.split(' ').join('');
+// let result = 0;
+// let currentNumber = '';
+// let currentOperator = '+';
+// for (let i = 0; i < expression.length; i++) {
+//   let char = expression[i];
+//   if (!isNaN(char)) {
+//     currentNumber += char;
+//   } else {
+//     if (currentOperator === '+') {
+//       result += Number(currentNumber);
+//     } else if (currentOperator === '-') {
+//       result -= Number(currentNumber);
+//     }
+//     currentOperator = char;
+//     currentNumber = '';
+//   }
+// }
+// if (currentOperator === '+') {
+//   result += Number(currentNumber);
+// } else if (currentOperator === '-') {
+//   result -= Number(currentNumber);
+// }
+// console.log(result);
 //! String14. N1, N2 natural sonlari va S1, S2 satr berilgan. S1 satrning dastlabki N1 ta belgisidan va S2 satrning oxirgi N2 ta belgisidan iborat yangi satr hosil qiling.
+// let N1 = 3;
+// let N2 = -1;
+
+// let S1 = "Hello S1 ";
+// let S2 = "S2 World";
+
+// let A1 = S1.slice(0, N1);
+// let A2 = S2.slice(-N2, -1);
+// console.log(A1);
+// console.log(A2);
+
+// let res = A1.concat(A2);
+// console.log(res);
 
 //! String15. C belgisi va S satri berilgan. S satrida uchragan har bir C belgisini 2 marta orttiruvchi programma tuzilsin.
+// let a = "z";
+// let b = "Azizbek";
+// let result = "";
+
+// for (let el of b) {
+//   if (el === a) {
+//     result += el.replaceAll().repeat(2);
+//   } else {
+//     result += el;
+//   }
+// }
+
+// console.log(result); // Output: "Azizzbek"
 
 //! String16. C belgisi va S1, S2 satrlari berilgan. S1 satriga shu satrda uchragan har bir C belgisidan oldin S2 satrini qo'shuvchi programma tuzilsin.
 
