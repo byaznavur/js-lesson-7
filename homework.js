@@ -106,7 +106,7 @@
 // let str = "D:/Abdulaziz/Books/Programmer.exe";
 // let splitStr = str.split("/");
 // console.log(splitStr[2]);
-// UYGA VAZIFA
+// !UYGA VAZIFA
 
 // String1. n butun soni berilgan (1 <= n <= 26). Lotin alfavitidagi dastlabki n ta katta harflarni chiqaruvchi programma tuzilsin.
 
