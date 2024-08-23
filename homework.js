@@ -109,44 +109,195 @@
 // !UYGA VAZIFA
 
 // String1. n butun soni berilgan (1 <= n <= 26). Lotin alfavitidagi dastlabki n ta katta harflarni chiqaruvchi programma tuzilsin.
+// let n = 12;
 
+// for (let i = 65; i <= 65 + n; i++) {
+//   console.log(String.fromCharCode(i));
+// }
 // String2. Kiritilgan belgining nimaligini aniqlovchi programma tuzilsin. Agar kiritilgan belgi raqam bo'lsa - "digit", lotincha harf bo'lsa - "lotin" yozuvi chiqarilsin. Boshqa xolatlar uchun nol chiqarilsin.
+// let n = 12;
 
+// if (!isNaN(n)) {
+//   console.log("Digit");
+// } else if (n.toLowerCase() !== n.toUpperCase()) {
+//   console.log("Lotin");
+// }
 // String3. Satr beilgan. Satrning birinchi va oxirgi belgisini UTF-16 jadvalidagi kodini chiqaruvchi programma tuzilsin.
+// let str = "Azizbek";
 
+// let part1 = str.split("")[0];
+// let part2 = str.split("")[str.length - 1];
+// console.log(part1, part2);
 // String4. N natural soni va belgi berilgan. N ta kiritilgan belgidan iborat satr hosil qiling va ekranga chiqaring. Masalan: N = 5; Belgi = 'A'; Natija = AAAAA
 
+// let N = 12;
+// let str = "A";
+// let newStr = str.repeat(N);
+
+// console.log(newStr);
 // String5. Kiritilgan satrni teskari tartibda chiqaruvchi programma tuzilsin.
+
+// let str = "Azizbek";
+// let spiltStr = str.split("");
+
+// let res = spiltStr.reverse().join("");
+// console.log(res);
 
 // String6. Satr va N natural soni berilgan. Shu satr belgilari orasiga N tadan "*" belgisi qo’yib yangi satr qaytaruvchi getStringStars(N) nomli funksiya tuzilsin.
 //
+
+// let str = "Azizbek";
+// let N = 2;
+// let res = str.split("").join("*".repeat(N));
+// console.log(res);
+
 // String7. Satr berilgan. Satrdagi raqamlar sonini aniqlovchi programma tuzilsin. (for of va isNaN dan foydalaning !)
 
+// let str = "Ajaljd2323";
+// let count = 0;
+// for (let el of str) {
+//   if (!isNaN(el)) {
+//     console.log(el);
+//     count++;
+//   }
+// }
+
+// console.log(count);
+
 // String8. Satr berilgan. Satrdagi kichik lotin va kirill harflarining umumiy sonini aniqlovchi programma tuzilsin.
+// let str = "Men Azizbek";
+// let count = 0;
+
+// for (let el of str) {
+//   if ((el >= "a" && el <= "z") || (el >= "а" && el <= "я")) {
+//     count++;
+//   }
+// }
+
+// console.log("Total count of Latin and Cyrillic lowercase letters:", count);
 
 // String9. Satr berilgan. Satrdagi xamma katta lotin harflari kichigiga almashtiruvchi programma tuzilsin.
-
+// let str = "Azizbek".toLowerCase();
+// console.log(str);
 // String10. Satr berilgan. Satrdagi xamma katta harflarini kichigiga, kichiklarini kattasiga almashtiruvchi programma tuzilsin.
+// let str = "Asasd KASDASD asdasd ";
 
+// let newStr = "";
+
+// for (let el of str) {
+//   if (el === el.toLowerCase()) {
+//     newStr += el.toUpperCase();
+//   } else {
+//     newStr += el.toLowerCase();
+//   }
+// }
+
+// console.log(newStr);
 // String11. Satr berilgan. Agar satrda butun son ifodalangan bo'lsa 1 chiqarilsin, agar haqiqiy son bo'lsa 2 chiqarilsin. Agar satrni songa aylantirish imkoni bo'lmasa 0 chiqarilsin. Haqiqiy sonning kasr qismi nuqta "." Bilan ajratilgan deb qabul qilinsin.
+// let str = "12.1";
 
+// if (Number.isInteger(+str)) {
+//   console.log(1);
+// } else if (!Number.isInteger(+str)) {
+//   console.log(2);
+// } else {
+//   console.log(0);
+// }
 // String12. Berilgan n sonni teskarisiga almashtiruvchi getInverseNumber(n) nomli funksiya tuzing.
+// let num = 112132;
+// let str = num.toString();
 
+// let res = str.split("").reverse().join("");
+// console.log(res);
 // String13. "son ± son±... ± son" ko'rinishidagi arifmetik ifodani bildiruvchi satr berilgan. "+" belgisi o'rnida yo "+" yoki "-" bo'ladi. (Masalan: 7 + 3 - 2) Ifodaning qiymatini aniqlovchi programma tuzilsin. (son o'rnida butun son kiritiladi)
 
+// function evaluateExpression(expression) {
+//   return eval(expression);
+// }
+// const expression = "7 + 3 - 2 + 2 - 12 + 12 - 23 + 12 - 43 ";
+// const result = evaluateExpression(expression);
+
+// console.log("Ifodaning natijasi: " + result);
+
 // String14. N1, N2 natural sonlari va S1, S2 satr berilgan. S1 satrning dastlabki N1 ta belgisidan va S2 satrning oxirgi N2 ta belgisidan iborat yangi satr hosil qiling.
+// let N1 = 2;
+// let N2 = 3;
+// let S1 = "Azizbek";
+// let S2 = "Abduhakimov"
+// let newS1 = S1.slice(0, N1) + S2.slice(N2);
+// console.log(newS1)
 
 // String15. C belgisi va S satri berilgan. S satrida uchragan har bir C belgisini 2 marta orttiruvchi programma tuzilsin.
+// function doubleCharacter(S, C) {
+//   return S.split(C).join(C + C);
+// }
+// const S = "Azizbek";
+// const C = "z";
+// const result = doubleCharacter(S, C);
+
+// console.log("Natija: " + result);
 
 // String16. C belgisi va S1, S2 satrlari berilgan. S1 satriga shu satrda uchragan har bir C belgisidan oldin S2 satrini qo'shuvchi programma tuzilsin.
+// let C = "z";
+// let S1 = "Azizbek";
+// let S2 = "Abduhakimov";
+// let newStr = S1.replace(C, C + S2);
+// console.log(newStr);
 
 // String17. S1 va S2 satrlari berilgan. S2 satrini S1 satrida takrorlanishlar sonini chiqaruvchi programma tuzilsin.
+// let S1 = "Azizbek Abduhakimov Azizbek Bakhtiyarivich";
+// let S2 = "Azizbek";
+
+// let res = S1.split(" ");
+// let count = 0;
+
+// for (let el of res) {
+//   if (el === S2) {
+//     count++;
+//   }
+// }
+// console.log(count);
 
 // String18. S1 va S2 satrlari berilgan. S1 satrida birinchi uchragan S2 satrini o'chirib tashlovchi programma tuzilsin. Agar S1 satrida S2 satri uchramasa S1 satri o'zgarishsiz qoldirilsin.
+// function removeFirstOccurrence(S1, S2) {
+//   const index = S1.indexOf(S2);
+//   if (index !== -1) {
+//     const before = S1.slice(0, index);
+//     const after = S1.slice(index + S2.length);
+//     return before + after;
+//   }
+//   return S1;
+// }
+// let S1 = " Abduhakimov Azizbek Bakhtiyarivich Azizbek";
+// let S2 = "Azizbek";
+// let result = removeFirstOccurrence(S1, S2);
+
+// console.log("Natija: " + result); // " Abduhakimov Azizbek Bakhtiyarivich"
 
 // String19. S1 va S2 satrlari berilgan. S1 satrida uchragan barcha S2 satrlarini o'chirib tashlovchi programma tuzilsin. Agar S1 satrida S2 satri uchramasa S1 satri o'zgarishsiz qoldirilsin.
+// function removeFirstOccurrence(S1, S2) {
+//     const index = S1.indexOf(S2);
+//     if (index !== -1) {
+//       const before = S1.slice(0, index);
+//       const after = S1.slice(index + S2.length);
+//       return before + after;
+//     }
+//     return S1;
+//   }
+//   let S1 = " Abduhakimov Azizbek Bakhtiyarivich Azizbek";
+//   let S2 = "Azizbek";
+//   let result = removeFirstOccurrence(S1, S2);
+
+//   console.log("Natija: " + result); // " Abduhakimov Azizbek Bakhtiyarivich"
 
 // String20. S1, S2 va S3 satrlari berilgan. S1 satrida birinchi uchragan S2 satrini S3 satriga o'zgartiruvchi programma tuzilsin.
+// let a = "uzum";
+// let b = "z";
+// let c = "b";
+
+// let result = a.replace(b, c);
+
+// console.log(result); // "uzumb"
 
 // String21. S1, S2 va S3 satrlari berilgan. S1 satrida oxirgi uchragan S2 satrini S3 satriga o'zgartiruvchi programma tuzilsin.
 
