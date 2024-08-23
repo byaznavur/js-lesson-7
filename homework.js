@@ -11,13 +11,39 @@
 
 // console.log(sum);
 
-// String2. UTF-16 jadvalida kiritilgan belgidan oldin va keyin turuvchi belgilarni chiqaruvchi programma tuzilsin.
+// ?String2. UTF-16 jadvalida kiritilgan belgidan oldin va keyin turuvchi belgilarni chiqaruvchi programma tuzilsin.
 
-// String3. UTF-16 jadvali orqali faqat katta va kichik harflardan iborat satr qaytaruvchi mos ravishda getUpperCases()  vs getLowerCases() nomli funksiyalar hosil qiling.
+// let syb = "d";
+
+// let sybPos = syb.charCodeAt();
+// let nextPos = String.fromCharCode(sybPos + 1);
+// let oldPos = String.fromCharCode(sybPos - 1);
+// console.log(nextPos);
+
+// ?String3. UTF-16 jadvali orqali faqat katta va kichik harflardan iborat satr qaytaruvchi mos ravishda getUpperCases()  vs getLowerCases() nomli funksiyalar hosil qiling.
+// function getUpperCases() {
+//   let str = "";
+//   for (let i = 65; i <= 90; i++) {
+//     str += String.fromCharCode(i);
+//   }
+//   console.log(str);
+// }
+// getUpperCases();
+// function getLowerCases() {
+//   let str = "";
+//   for (let i = 97; i <= 122; i++) {
+//     str += String.fromCharCode(i);
+//   }
+//   console.log(str);
+// }
+// getLowerCases();
 
 // String4. Satr berilgan. Shu satr belgilari orasiga bittadan probel qo'yilgan satr hosil qiluvchi va ekranga chiqaruvchi programma tuzilsin. Kiritilgan satrda probel yo'q deb qabul qilinsin.
 // Input: let str = "abcd"
 // Output: "a b c d"
+// let str = "abcd";
+// let newStr = str.replaceAll("", " ").trim();
+// console.log(newStr);
 
 // Eslatma: string => number
 
@@ -29,7 +55,12 @@
 // String5. C belgisi va S1, S2 satrlari berilgan. S1 satriga shu satrda uchragan har bir C belgisidan keyin S2 satrini qo'shuvchi programma tuzilsin.
 // Input: S1 = "Hello world"; S2 = "*", C = "l"
 // Output: "Hel*l*o worl*d"
+// let S1 = "Hello world";
+// let S2 = "*";
+// let C = "l";
 
+// let res = S1.replaceAll(C, C + S2);
+// console.log(res);
 // String6. S1 va S2 satrlari berilgan. S1 satrida oxirgi uchragan S2 satrini o'chirib tashlovchi programma tuzilsin. Agar S1 satrida S2 satri uchramasa S1 satri o'zgarishsiz qoldirilsin.
 // Input:
 // let S1 = "O'zbekiston buyuk davlat ! Uning yoshlari ham buyukdir !";
