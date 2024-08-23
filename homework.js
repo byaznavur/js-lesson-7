@@ -63,20 +63,49 @@
 // console.log(res);
 // String6. S1 va S2 satrlari berilgan. S1 satrida oxirgi uchragan S2 satrini o'chirib tashlovchi programma tuzilsin. Agar S1 satrida S2 satri uchramasa S1 satri o'zgarishsiz qoldirilsin.
 // Input:
-// let S1 = "O'zbekiston buyuk davlat ! Uning yoshlari ham buyukdir !";
-// let S2 = "buyuk"
 // Ouput: "O'zbekiston buyuk davlat ! Uning yoshlari ham dir !"
+// let S1 = "O'zbekiston buyuk davlat! Uning yoshlari ham buyukdir !";
+// let S2 = "buyuk";
+// let pos = S1.lastIndexOf(S2);
+// let part1 = S1.slice(0, pos);
+// let part2 = S1.slice(pos + S2.length);
+
+// console.log(part1, part2);
 
 // String7. Probel bilan ajratilgan o'zbekcha so'zlardan iborat str nomli satr berilgan. Satrdagi so'zlar sonini qaytaruvchi getNumberOfWords(str) nomli funksiya tuzilsin.
+// let str = "Men InshaAlloh dasturchi bo'laman!";
+// let splitStr = str.split(" ").length;
 
+// console.log(splitStr);
 // String8. Probel bilan ajratilgan va faqat katta harflar bilan terilgan o'zbekcha so'zlardan iborat satr berilgan. Satrdagi kamida bitta 'A' harfi bor so'zlar sonini aniqlovchi programma tuzilsin.
+// let str = "Men InshaAlloh dasturchi bo'laman!";
+// let splitStr = str.split(" ");
+// for (let el of splitStr) {
+//   if (el.includes("A")) {
+//     console.log(el);
+//   }
+// }
 
 // String9. Probel bilan ajratilgan o'zbekcha so'zlardan iborat str nomli satr berilgan. Satrdagi eng qisqa so'zni qataruvchi getMinOfString(str) funksiya tuzilsin.
+// let str = "Men InshaAlloh dasturchi bo'laman va!";
+// let splitStr = str.split(" ");
+
+// let min = splitStr[0];
+// for (let el of splitStr) {
+//   if (el.length < min.length) {
+//     min = el;
+//   }
+// }
+
+// console.log(min);
 
 // String10. Faylning to'liq nomini o'zida akslantirgan satr berilgan. Ya'ni disk nomi, papkalar nomi, faylning nomi va kengaytmasi. Satrdan birinchi papka nomini aniqlovchi programma tuzilsin.
 // Input: D:/Abdulaziz/Books/Programmer.exe
 // Output: Abdulaziz
 
+// let str = "D:/Abdulaziz/Books/Programmer.exe";
+// let splitStr = str.split("/");
+// console.log(splitStr[2]);
 // UYGA VAZIFA
 
 // String1. n butun soni berilgan (1 <= n <= 26). Lotin alfavitidagi dastlabki n ta katta harflarni chiqaruvchi programma tuzilsin.
