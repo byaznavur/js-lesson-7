@@ -1,21 +1,21 @@
-// String1
+// !String1
 
 // let n = 83471;
 
 // let str = n.toString();
 
-// // console.log(str.length);
+// console.log(str.length);
 
 // let sum = 0;
 
 // for (let el of str) {
-//   // console.log(+el);
+// console.log(+el);
 //   sum += +el;
 // }
 
 // console.log(sum);
 
-// String2
+// !String2
 
 // let char = "d";
 
@@ -26,19 +26,19 @@
 // console.log(String.fromCharCode(charPos - 1));
 // console.log(String.fromCharCode(charPos + 1));
 
-// String3
+// !String3
 
-function getUpperCases() {
-  let str = "";
-  for (let i = 65; i <= 90; i++) {
-    str += String.fromCharCode(i);
-  }
-  return str;
-}
+// function getUpperCases() {
+//   let str = "";
+//   for (let i = 65; i <= 90; i++) {
+//     str += String.fromCharCode(i);
+//   }
+//   return str;
+// }
 
-let upperCases = getUpperCases();
+// let upperCases = getUpperCases();
 
-console.log(upperCases);
+// console.log(upperCases);
 
 // function getLowerCases() {
 //   let str = "";
@@ -52,7 +52,7 @@ console.log(upperCases);
 
 // console.log(lowerCases);
 
-// String5
+// !String5
 
 // let str = "abcd";
 
@@ -60,17 +60,17 @@ console.log(upperCases);
 
 // console.log(newStr);
 
-// String6
+// !String6
 
-let S1 = "Hello world";
-let S2 = "*";
-let C = "l";
+// let S1 = "Hello world";
+// let S2 = "*";
+// let C = "l";
 
-let res = S1.replaceAll(C, C + S2);
+// let res = S1.replaceAll(C, C + S2);
 
-console.log(res);
+// console.log(res);
 
-// String7
+// !String7
 
 // let S1 = "O'zbekiston buyuk davlat ! Uning yoshlari ham buyukdir !";
 // let S2 = "buyuk";
@@ -84,7 +84,7 @@ console.log(res);
 
 // console.log(res);
 
-// String9
+// !String9
 
 // let str = "O'zbekiston buyuk davlat! Uning yoshlari ham buyukdir!";
 
@@ -96,7 +96,7 @@ console.log(res);
 // let res = getNumberOfWords(str);
 // console.log(res);
 
-// String10
+// !String10
 
 // let str = "O'ZBEKISTON BUYUK DAVLAT! UNING YOSHLARI HAM BUYUKDIR!";
 
@@ -112,7 +112,7 @@ console.log(res);
 
 // console.log(count);
 
-// String11
+// !String11
 
 // const getMinOfString = (str) => {
 //   let arr = str.split(" ");

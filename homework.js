@@ -1,12 +1,21 @@
 // DARSDA KO’RILISHI KERAK BO’LGAN MASALALAR
 
-//! String1. Sonning necha xonali ekanini, raqamlari yig’indisini chiqaruvchi dastur tuzing.
+// ?String1. Sonning necha xonali ekanini, raqamlari yig’indisini chiqaruvchi dastur tuzing.
+// let num = 12;
+// let str = num.toString();
+// console.log(str.length);
+// let sum = 0;
+// for (let el of str) {
+//   sum += +el;
+// }
 
-//! String2. UTF-16 jadvalida kiritilgan belgidan oldin va keyin turuvchi belgilarni chiqaruvchi programma tuzilsin.
+// console.log(sum);
 
-//! String3. UTF-16 jadvali orqali faqat katta va kichik harflardan iborat satr qaytaruvchi mos ravishda getUpperCases()  vs getLowerCases() nomli funksiyalar hosil qiling.
+// String2. UTF-16 jadvalida kiritilgan belgidan oldin va keyin turuvchi belgilarni chiqaruvchi programma tuzilsin.
 
-//! String4. Satr berilgan. Shu satr belgilari orasiga bittadan probel qo'yilgan satr hosil qiluvchi va ekranga chiqaruvchi programma tuzilsin. Kiritilgan satrda probel yo'q deb qabul qilinsin.
+// String3. UTF-16 jadvali orqali faqat katta va kichik harflardan iborat satr qaytaruvchi mos ravishda getUpperCases()  vs getLowerCases() nomli funksiyalar hosil qiling.
+
+// String4. Satr berilgan. Shu satr belgilari orasiga bittadan probel qo'yilgan satr hosil qiluvchi va ekranga chiqaruvchi programma tuzilsin. Kiritilgan satrda probel yo'q deb qabul qilinsin.
 // Input: let str = "abcd"
 // Output: "a b c d"
 
@@ -17,226 +26,91 @@
 // +"1a2b" => NaN
 // isNaN()
 
-//! String5. C belgisi va S1, S2 satrlari berilgan. S1 satriga shu satrda uchragan har bir C belgisidan keyin S2 satrini qo'shuvchi programma tuzilsin.
+// String5. C belgisi va S1, S2 satrlari berilgan. S1 satriga shu satrda uchragan har bir C belgisidan keyin S2 satrini qo'shuvchi programma tuzilsin.
 // Input: S1 = "Hello world"; S2 = "*", C = "l"
 // Output: "Hel*l*o worl*d"
 
-//! String6. S1 va S2 satrlari berilgan. S1 satrida oxirgi uchragan S2 satrini o'chirib tashlovchi programma tuzilsin. Agar S1 satrida S2 satri uchramasa S1 satri o'zgarishsiz qoldirilsin.
+// String6. S1 va S2 satrlari berilgan. S1 satrida oxirgi uchragan S2 satrini o'chirib tashlovchi programma tuzilsin. Agar S1 satrida S2 satri uchramasa S1 satri o'zgarishsiz qoldirilsin.
 // Input:
 // let S1 = "O'zbekiston buyuk davlat ! Uning yoshlari ham buyukdir !";
 // let S2 = "buyuk"
 // Ouput: "O'zbekiston buyuk davlat ! Uning yoshlari ham dir !"
 
-//! String7. Probel bilan ajratilgan o'zbekcha so'zlardan iborat str nomli satr berilgan. Satrdagi so'zlar sonini qaytaruvchi getNumberOfWords(str) nomli funksiya tuzilsin.
+// String7. Probel bilan ajratilgan o'zbekcha so'zlardan iborat str nomli satr berilgan. Satrdagi so'zlar sonini qaytaruvchi getNumberOfWords(str) nomli funksiya tuzilsin.
 
-//! String8. Probel bilan ajratilgan va faqat katta harflar bilan terilgan o'zbekcha so'zlardan iborat satr berilgan. Satrdagi kamida bitta 'A' harfi bor so'zlar sonini aniqlovchi programma tuzilsin.
+// String8. Probel bilan ajratilgan va faqat katta harflar bilan terilgan o'zbekcha so'zlardan iborat satr berilgan. Satrdagi kamida bitta 'A' harfi bor so'zlar sonini aniqlovchi programma tuzilsin.
 
-//! String9. Probel bilan ajratilgan o'zbekcha so'zlardan iborat str nomli satr berilgan. Satrdagi eng qisqa so'zni qataruvchi getMinOfString(str) funksiya tuzilsin.
+// String9. Probel bilan ajratilgan o'zbekcha so'zlardan iborat str nomli satr berilgan. Satrdagi eng qisqa so'zni qataruvchi getMinOfString(str) funksiya tuzilsin.
 
-//! String10. Faylning to'liq nomini o'zida akslantirgan satr berilgan. Ya'ni disk nomi, papkalar nomi, faylning nomi va kengaytmasi. Satrdan birinchi papka nomini aniqlovchi programma tuzilsin.
+// String10. Faylning to'liq nomini o'zida akslantirgan satr berilgan. Ya'ni disk nomi, papkalar nomi, faylning nomi va kengaytmasi. Satrdan birinchi papka nomini aniqlovchi programma tuzilsin.
 // Input: D:/Abdulaziz/Books/Programmer.exe
 // Output: Abdulaziz
 
-//? UYGA VAZIFA
+// UYGA VAZIFA
 
-//! String1. n butun soni berilgan (1 <= n <= 26). Lotin alfavitidagi dastlabki n ta katta harflarni chiqaruvchi programma tuzilsin.
-// let n = 12;
-// for (let i = 0; i < n; i++) {
-//   console.log(String.fromCharCode(65 + i));
-// }
-//! String2. Kiritilgan belgining nimaligini aniqlovchi programma tuzilsin. Agar kiritilgan belgi raqam bo'lsa - "digit", lotincha harf bo'lsa - "lotin" yozuvi chiqarilsin. Boshqa xolatlar uchun nol chiqarilsin.
+// String1. n butun soni berilgan (1 <= n <= 26). Lotin alfavitidagi dastlabki n ta katta harflarni chiqaruvchi programma tuzilsin.
 
-// let belgi = "323";
-// if (!isNaN(belgi) && belgi.length === 1) {
-//   console.log("digit");
-// } else if (belgi.toLowerCase() !== belgi.toUpperCase() && belgi.length === 1) {
-//   console.log("lotin");
-// } else {
-//   console.log(0);
-// }
+// String2. Kiritilgan belgining nimaligini aniqlovchi programma tuzilsin. Agar kiritilgan belgi raqam bo'lsa - "digit", lotincha harf bo'lsa - "lotin" yozuvi chiqarilsin. Boshqa xolatlar uchun nol chiqarilsin.
 
-//! String3. Satr beilgan. Satrning birinchi va oxirgi belgisini UTF-16 jadvalidagi kodini chiqaruvchi programma tuzilsin.
-// let str = "Azizbek";
-// let a = str.codePointAt();
-// let b = str.codePointAt(str.length - 1);
-// console.log(a);
-// console.log(b);
+// String3. Satr beilgan. Satrning birinchi va oxirgi belgisini UTF-16 jadvalidagi kodini chiqaruvchi programma tuzilsin.
 
-//! String4. N natural soni va belgi berilgan. N ta kiritilgan belgidan iborat satr hosil qiling va ekranga chiqaring. Masalan: N = 5; Belgi = 'A'; Natija = AAAAA
-// let a = 5;
-// let b = "A";
-// let res = b.padEnd(a, "A");
+// String4. N natural soni va belgi berilgan. N ta kiritilgan belgidan iborat satr hosil qiling va ekranga chiqaring. Masalan: N = 5; Belgi = 'A'; Natija = AAAAA
 
-// console.log(res);
-//! String5. Kiritilgan satrni teskari tartibda chiqaruvchi programma tuzilsin.
-// let str = "Azizbek";
-// let teskariSatr = str.split("").reverse().join("");
-// console.log(teskariSatr);
-//! String6. Satr va N natural soni berilgan. Shu satr belgilari orasiga N tadan "*" belgisi qo’yib yangi satr qaytaruvchi getStringStars(N) nomli funksiya tuzilsin.
-// let str = "Azizbek";
-// let N = 13;
+// String5. Kiritilgan satrni teskari tartibda chiqaruvchi programma tuzilsin.
 
-// function getStringStars(N) {
-//   let stars = "*".repeat(N);
-//   let result = str.split("").join(stars);
-//   return result;
-// }
+// String6. Satr va N natural soni berilgan. Shu satr belgilari orasiga N tadan "*" belgisi qo’yib yangi satr qaytaruvchi getStringStars(N) nomli funksiya tuzilsin.
+//
+// String7. Satr berilgan. Satrdagi raqamlar sonini aniqlovchi programma tuzilsin. (for of va isNaN dan foydalaning !)
 
-//! String7. Satr berilgan. Satrdagi raqamlar sonini aniqlovchi programma tuzilsin. (for of va isNaN dan foydalaning !)
+// String8. Satr berilgan. Satrdagi kichik lotin va kirill harflarining umumiy sonini aniqlovchi programma tuzilsin.
 
-// let count = 0;
-// let str = "Aziz21bek";
+// String9. Satr berilgan. Satrdagi xamma katta lotin harflari kichigiga almashtiruvchi programma tuzilsin.
 
-// for (el of str.split("")) {
-//   if (!isNaN(el)) {
-//     count++;
-//   }
-// }
+// String10. Satr berilgan. Satrdagi xamma katta harflarini kichigiga, kichiklarini kattasiga almashtiruvchi programma tuzilsin.
 
-// console.log(count);
-//! String8. Satr berilgan. Satrdagi kichik lotin va kirill harflarining umumiy sonini aniqlovchi programma tuzilsin.
-// let str = "aAAAA";
-// let count = 0;
+// String11. Satr berilgan. Agar satrda butun son ifodalangan bo'lsa 1 chiqarilsin, agar haqiqiy son bo'lsa 2 chiqarilsin. Agar satrni songa aylantirish imkoni bo'lmasa 0 chiqarilsin. Haqiqiy sonning kasr qismi nuqta "." Bilan ajratilgan deb qabul qilinsin.
 
-// for (let el of str) {
-//   let charCode = el.charCodeAt(0);
-//   console.log(charCode);
-//   if (
-//     (charCode >= 97 && charCode <= 122) ||
-//     (charCode >= 1072 && charCode <= 1103)
-//   ) {
-//     count++;
-//   }
-// }
+// String12. Berilgan n sonni teskarisiga almashtiruvchi getInverseNumber(n) nomli funksiya tuzing.
 
-// console.log(count); // Natija: 8
+// String13. "son ± son±... ± son" ko'rinishidagi arifmetik ifodani bildiruvchi satr berilgan. "+" belgisi o'rnida yo "+" yoki "-" bo'ladi. (Masalan: 7 + 3 - 2) Ifodaning qiymatini aniqlovchi programma tuzilsin. (son o'rnida butun son kiritiladi)
 
-//! String9. Satr berilgan. Satrdagi xamma katta lotin harflari kichigiga almashtiruvchi programma tuzilsin.
-// console.log(str.toLowerCase());
-//! String10. Satr berilgan. Satrdagi xamma katta harflarini kichigiga, kichiklarini kattasiga almashtiruvchi programma tuzilsin.
-// let str = "AzizbekAAaaBBcc";
-// let newStr = "";
+// String14. N1, N2 natural sonlari va S1, S2 satr berilgan. S1 satrning dastlabki N1 ta belgisidan va S2 satrning oxirgi N2 ta belgisidan iborat yangi satr hosil qiling.
 
-// for (let el of str) {
-//   if (el === el.toUpperCase()) {
-//     newStr += el.toLowerCase();
-//   } else {
-//     newStr += el.toUpperCase();
-//   }
-// }
+// String15. C belgisi va S satri berilgan. S satrida uchragan har bir C belgisini 2 marta orttiruvchi programma tuzilsin.
 
-// console.log(newStr); // Natija: aZIZBEKaaAAbbCC
+// String16. C belgisi va S1, S2 satrlari berilgan. S1 satriga shu satrda uchragan har bir C belgisidan oldin S2 satrini qo'shuvchi programma tuzilsin.
 
-//! String11. Satr berilgan. Agar satrda butun son ifodalangan bo'lsa 1 chiqarilsin, agar haqiqiy son bo'lsa 2 chiqarilsin. Agar satrni songa aylantirish imkoni bo'lmasa 0 chiqarilsin. Haqiqiy sonning kasr qismi nuqta "." Bilan ajratilgan deb qabul qilinsin.
+// String17. S1 va S2 satrlari berilgan. S2 satrini S1 satrida takrorlanishlar sonini chiqaruvchi programma tuzilsin.
 
-// let str = "12.23";
+// String18. S1 va S2 satrlari berilgan. S1 satrida birinchi uchragan S2 satrini o'chirib tashlovchi programma tuzilsin. Agar S1 satrida S2 satri uchramasa S1 satri o'zgarishsiz qoldirilsin.
 
-// if (Number.isInteger(+str)) {
-//   console.log(1);
-// } else if (!Number.isInteger(+str)) {
-//   console.log(2);
-// } else {
-//   console.log(0);
-// }
-//! String12. Berilgan n sonni teskarisiga almashtiruvchi getInverseNumber(n) nomli funksiya tuzing.
+// String19. S1 va S2 satrlari berilgan. S1 satrida uchragan barcha S2 satrlarini o'chirib tashlovchi programma tuzilsin. Agar S1 satrida S2 satri uchramasa S1 satri o'zgarishsiz qoldirilsin.
 
-// function getInverseNumber(n) {
-//   let str = n.toString().split("").reverse().join("");
-//   return parseInt(str);
-// }
+// String20. S1, S2 va S3 satrlari berilgan. S1 satrida birinchi uchragan S2 satrini S3 satriga o'zgartiruvchi programma tuzilsin.
 
-// let res = getInverseNumber(213123);
-// console.log(res);
-//! String13. "son ± son±... ± son" ko'rinishidagi arifmetik ifodani bildiruvchi satr berilgan. "+" belgisi o'rnida yo "+" yoki "-" bo'ladi. (Masalan: 7 + 3 - 2) Ifodaning qiymatini aniqlovchi programma tuzilsin. (son o'rnida butun son kiritiladi)
+// String21. S1, S2 va S3 satrlari berilgan. S1 satrida oxirgi uchragan S2 satrini S3 satriga o'zgartiruvchi programma tuzilsin.
 
-// let expression = "7 + 3 - 2";
-// expression = expression.split(' ').join('');
-// let result = 0;
-// let currentNumber = '';
-// let currentOperator = '+';
-// for (let i = 0; i < expression.length; i++) {
-//   let char = expression[i];
-//   if (!isNaN(char)) {
-//     currentNumber += char;
-//   } else {
-//     if (currentOperator === '+') {
-//       result += Number(currentNumber);
-//     } else if (currentOperator === '-') {
-//       result -= Number(currentNumber);
-//     }
-//     currentOperator = char;
-//     currentNumber = '';
-//   }
-// }
-// if (currentOperator === '+') {
-//   result += Number(currentNumber);
-// } else if (currentOperator === '-') {
-//   result -= Number(currentNumber);
-// }
-// console.log(result);
-//! String14. N1, N2 natural sonlari va S1, S2 satr berilgan. S1 satrning dastlabki N1 ta belgisidan va S2 satrning oxirgi N2 ta belgisidan iborat yangi satr hosil qiling.
-// let N1 = 3;
-// let N2 = -1;
+// String22. Probel bilan ajratilgan va faqat katta harflar bilan terilgan o'zbekcha so'zlardan iborat satr berilgan. Satrdagi bir xil harflar bilan boshlanuvchi va tugovchi so'zlar sonini aniqlovchi programma tuzilsin.
 
-// let S1 = "Hello S1 ";
-// let S2 = "S2 World";
+// String23. Probel bilan ajratilgan va faqat katta harflar bilan terilgan o'zbekcha so'zlardan iborat satr berilgan. Satrdagi aniq 2 ta 'A' harfi bor so'zlar sonini aniqlovchi programma tuzilsin.
 
-// let A1 = S1.slice(0, N1);
-// let A2 = S2.slice(-N2, -1);
-// console.log(A1);
-// console.log(A2);
+// String24. Probel bilan ajratilgan o'zbekcha so'zlardan iborat str nomli satr berilgan. Satrdagi eng uzun so'zni qaytaruvchi getMaxOfString(str) nomli funksiya tuzilsin.
 
-// let res = A1.concat(A2);
-// console.log(res);
+// String25. Probel bilan ajratilgan o'zbekcha so'zlardan iborat satr berilgan. Shu satrdagi so'zlarni "." bilan ajratilgan xolda chiqaruvchi programma tuzilsin. Satr oxiriga "." qo'yish shart emas.
 
-//! String15. C belgisi va S satri berilgan. S satrida uchragan har bir C belgisini 2 marta orttiruvchi programma tuzilsin.
-// let a = "z";
-// let b = "Azizbek";
-// let result = "";
+// String26. Probel bilan ajratilgan kichik harfli so'zlardan iborat satr berilgan. Satrdagi har bir so'zning birinchi harfini kattasi bilan almashtiruvchi programma tuzilsin.
 
-// for (let el of b) {
-//   if (el === a) {
-//     result += el.replaceAll().repeat(2);
-//   } else {
-//     result += el;
-//   }
-// }
-
-// console.log(result); // Output: "Azizzbek"
-
-//! String16. C belgisi va S1, S2 satrlari berilgan. S1 satriga shu satrda uchragan har bir C belgisidan oldin S2 satrini qo'shuvchi programma tuzilsin.
-
-//! String17. S1 va S2 satrlari berilgan. S2 satrini S1 satrida takrorlanishlar sonini chiqaruvchi programma tuzilsin.
-
-//! String18. S1 va S2 satrlari berilgan. S1 satrida birinchi uchragan S2 satrini o'chirib tashlovchi programma tuzilsin. Agar S1 satrida S2 satri uchramasa S1 satri o'zgarishsiz qoldirilsin.
-
-//! String19. S1 va S2 satrlari berilgan. S1 satrida uchragan barcha S2 satrlarini o'chirib tashlovchi programma tuzilsin. Agar S1 satrida S2 satri uchramasa S1 satri o'zgarishsiz qoldirilsin.
-
-//! String20. S1, S2 va S3 satrlari berilgan. S1 satrida birinchi uchragan S2 satrini S3 satriga o'zgartiruvchi programma tuzilsin.
-
-//! String21. S1, S2 va S3 satrlari berilgan. S1 satrida oxirgi uchragan S2 satrini S3 satriga o'zgartiruvchi programma tuzilsin.
-
-//! String22. Probel bilan ajratilgan va faqat katta harflar bilan terilgan o'zbekcha so'zlardan iborat satr berilgan. Satrdagi bir xil harflar bilan boshlanuvchi va tugovchi so'zlar sonini aniqlovchi programma tuzilsin.
-
-//! String23. Probel bilan ajratilgan va faqat katta harflar bilan terilgan o'zbekcha so'zlardan iborat satr berilgan. Satrdagi aniq 2 ta 'A' harfi bor so'zlar sonini aniqlovchi programma tuzilsin.
-
-//! String24. Probel bilan ajratilgan o'zbekcha so'zlardan iborat str nomli satr berilgan. Satrdagi eng uzun so'zni qaytaruvchi getMaxOfString(str) nomli funksiya tuzilsin.
-
-//! String25. Probel bilan ajratilgan o'zbekcha so'zlardan iborat satr berilgan. Shu satrdagi so'zlarni "." bilan ajratilgan xolda chiqaruvchi programma tuzilsin. Satr oxiriga "." qo'yish shart emas.
-
-//! String26. Probel bilan ajratilgan kichik harfli so'zlardan iborat satr berilgan. Satrdagi har bir so'zning birinchi harfini kattasi bilan almashtiruvchi programma tuzilsin.
-
-//! String27. Satr berilgan. Satrdagi tinish belgilari sonini chiqaruvchi programma tuzilsin.
+// String27. Satr berilgan. Satrdagi tinish belgilari sonini chiqaruvchi programma tuzilsin.
 // marks = [".", ",", ";", ":", "?", "!", "-", "'", '"', "(", ")"]
 
-//! String28. Faylning to'liq nomini o'zida akslantirgan satr berilgan. Ya'ni disk nomi, papkalar nomi, faylning nomi va kengaytmasi. Satrdan faylning nomini (kengaytmasiz) aniqlovchi programma tuzilsin.
+// String28. Faylning to'liq nomini o'zida akslantirgan satr berilgan. Ya'ni disk nomi, papkalar nomi, faylning nomi va kengaytmasi. Satrdan faylning nomini (kengaytmasiz) aniqlovchi programma tuzilsin.
 // Input: D:/Qudrat_c++/books/My_book.exe
 // Output: My_book
 
-//! String29. Faylning to'liq nomini o'zida akslantirgan satr berilgan. Ya'ni disk nomi, papkalar nomi, faylning nomi va kengaytmasi. Satrdan faylning kengaytmasini aniqlovchi programma tuzilsin.
+// String29. Faylning to'liq nomini o'zida akslantirgan satr berilgan. Ya'ni disk nomi, papkalar nomi, faylning nomi va kengaytmasi. Satrdan faylning kengaytmasini aniqlovchi programma tuzilsin.
 // Input: D:/Qudrat_c++/books/My_book.exe
 // Output: exe
 
-//! String30. Faylning to'liq nomini o'zida akslantirgan satr berilgan. Ya'ni disk nomi, papkalar nomi, faylning nomi va kengaytmasi. Satrdan oxirgi papka nomini aniqlovchi programma tuzilsin. Agar papka tub bo'lsa (корневой), "/" belgisi chiqarilsin.
+// String30. Faylning to'liq nomini o'zida akslantirgan satr berilgan. Ya'ni disk nomi, papkalar nomi, faylning nomi va kengaytmasi. Satrdan oxirgi papka nomini aniqlovchi programma tuzilsin. Agar papka tub bo'lsa (корневой), "/" belgisi chiqarilsin.
 // Input: D:/Qudrat_c++/books/My_book.exe
 // Output: books
