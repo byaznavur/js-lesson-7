@@ -291,37 +291,128 @@
 //   console.log("Natija: " + result); // " Abduhakimov Azizbek Bakhtiyarivich"
 
 // String20. S1, S2 va S3 satrlari berilgan. S1 satrida birinchi uchragan S2 satrini S3 satriga o'zgartiruvchi programma tuzilsin.
-// let a = "uzum";
-// let b = "z";
-// let c = "b";
-
-// let result = a.replace(b, c);
-
-// console.log(result); // "uzumb"
+// function replaceFirstOccurrence(s1, s2, s3) {
+//     return s1.replace(s2, s3);
+// }
+// let a = "uzum bilan olma";
+// let b = "olma";
+// let c = "anor";
+// let result = replaceFirstOccurrence(a, b, c);
+// console.log(result);
 
 // String21. S1, S2 va S3 satrlari berilgan. S1 satrida oxirgi uchragan S2 satrini S3 satriga o'zgartiruvchi programma tuzilsin.
 
+// function replaceLastOccurrence(s1, s2, s3) {
+//   const index = s1.lastIndexOf(s2);
+//   if (index === -1) {
+//     return s1;
+//   }
+//   const result = s1.slice(0, index) + s3 + s1.slice(index + s2.length);
+//   return result;
+// }
+// const S1 = "Hello world, welcome to the world of JavaScript.";
+// const S2 = "world";
+// const S3 = "universe";
+// console.log(replaceLastOccurrence(S1, S2, S3));
+
 // String22. Probel bilan ajratilgan va faqat katta harflar bilan terilgan o'zbekcha so'zlardan iborat satr berilgan. Satrdagi bir xil harflar bilan boshlanuvchi va tugovchi so'zlar sonini aniqlovchi programma tuzilsin.
+// let s1 = "OELLO WORLD WELCOME TO THE WORLD OF JAVASCRIPT HESSO";
+
+// // Satrdagi so'zlarni ajratib olish
+// let words = s1.split(" ");
+// let count = 0;
+
+// // Har bir so'z uchun tekshirish
+// for (let word of words) {
+//   // Agar so'zning birinchi va oxirgi harfi bir xil bo'lsa
+//   if (word[0] === word[word.length - 1]) {
+//     count++;
+//   }
+// }
+
+// console.log(
+//   "Bir xil harflar bilan boshlanuvchi va tugovchi so'zlar soni: " + count
+// );
 
 // String23. Probel bilan ajratilgan va faqat katta harflar bilan terilgan o'zbekcha so'zlardan iborat satr berilgan. Satrdagi aniq 2 ta 'A' harfi bor so'zlar sonini aniqlovchi programma tuzilsin.
+// let s1 = "OELLO WORLD WELCOME TO THE WORLD OF JAVASCRIPT HESSO AZIZA";
+
+// let str = s1.split(" ");
+// let count = 0;
+// for (let el of str) {
+//   let strEl = el.split("");
+//   let count2 = 0;
+//   for (let el2 of strEl) {
+//     if (el2 === "A") {
+//       count2++;
+//     }
+//   }
+//   if (count2 === 2) {
+//     count++;
+//   }
+// }
+
+// console.log(count);
 
 // String24. Probel bilan ajratilgan o'zbekcha so'zlardan iborat str nomli satr berilgan. Satrdagi eng uzun so'zni qaytaruvchi getMaxOfString(str) nomli funksiya tuzilsin.
+// let str = "Men InshaAlloh dasturchi bo'laman va!";
+// let splitStr = str.split(" ");
 
+// let max = splitStr[0];
+// for (let el of splitStr) {
+//   if (el.length > max.length) {
+//     max = el;
+//   }
+// }
+
+// console.log(max);
 // String25. Probel bilan ajratilgan o'zbekcha so'zlardan iborat satr berilgan. Shu satrdagi so'zlarni "." bilan ajratilgan xolda chiqaruvchi programma tuzilsin. Satr oxiriga "." qo'yish shart emas.
+// let s1 = "OELLO WORLD WELCOME TO THE WORLD OF JAVASCRIPT HESSO AZIZA";
+// let str = s1.split(" ").join(".");
+// console.log(str);
 
 // String26. Probel bilan ajratilgan kichik harfli so'zlardan iborat satr berilgan. Satrdagi har bir so'zning birinchi harfini kattasi bilan almashtiruvchi programma tuzilsin.
+// let str = "alloh hohlamasa biror bir barg yerga tushmas";
+
+// let strSplit = str.split(" ");
+// let res = "";
+// for (let el of strSplit) {
+//   res += el[0].toUpperCase() + el.slice(1) + " ";
+// }
+// console.log(res.trim());
 
 // String27. Satr berilgan. Satrdagi tinish belgilari sonini chiqaruvchi programma tuzilsin.
 // marks = [".", ",", ";", ":", "?", "!", "-", "'", '"', "(", ")"]
+// let str = "Salom, dunyo! Qanday qilib - sizga yordam bera olaman?";
+// let marks = [".", ",", ";", ":", "?", "!", "-", "'", '"', "(", ")"];
+// let count = 0;
+// for (let char of str) {
+//   if (marks.includes(char)) {
+//     count++;
+//   }
+// }
+
+// console.log("Tinish belgilarining umumiy soni: " + count);
 
 // String28. Faylning to'liq nomini o'zida akslantirgan satr berilgan. Ya'ni disk nomi, papkalar nomi, faylning nomi va kengaytmasi. Satrdan faylning nomini (kengaytmasiz) aniqlovchi programma tuzilsin.
 // Input: D:/Qudrat_c++/books/My_book.exe
 // Output: My_book
+// let filePath = "D:/Qudrat_c++/books/My_book.exe";
+// let fileNameWithExt = filePath.split("/").pop();  // "My_book.exe"
+// let fileName = fileNameWithExt.split(".")[0];     // "My_book"
+// console.log("Fayl nomi (kengaytmasiz): " + fileName);
 
 // String29. Faylning to'liq nomini o'zida akslantirgan satr berilgan. Ya'ni disk nomi, papkalar nomi, faylning nomi va kengaytmasi. Satrdan faylning kengaytmasini aniqlovchi programma tuzilsin.
 // Input: D:/Qudrat_c++/books/My_book.exe
 // Output: exe
+// let filePath = "D:/Qudrat_c++/books/My_book.exe";
+// let fileExtension = filePath.split(".").pop(); // "exe"
+// console.log("Fayl kengaytmasi: " + fileExtension);
 
 // String30. Faylning to'liq nomini o'zida akslantirgan satr berilgan. Ya'ni disk nomi, papkalar nomi, faylning nomi va kengaytmasi. Satrdan oxirgi papka nomini aniqlovchi programma tuzilsin. Agar papka tub bo'lsa (корневой), "/" belgisi chiqarilsin.
 // Input: D:/Qudrat_c++/books/My_book.exe
 // Output: books
+// let filePath = "D:/Qudrat_c++/books/My_book.exe";
+// let pathParts = filePath.split("/");
+// let lastFolder = pathParts.length > 2 ? pathParts[pathParts.length - 2] : "/";
+// console.log("Oxirgi papka: " + lastFolder);
